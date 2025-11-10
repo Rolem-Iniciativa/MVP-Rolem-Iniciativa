@@ -1,0 +1,122 @@
+
+
+body{
+
+    background-color: var(--bg-page);
+    color: var(--text-color-padrao);
+
+}
+
+.card_login{
+
+    background-color: var(--bg-navbar);
+    align-self: end;
+    justify-self: end;
+    width: 25%;
+    height: 35%;
+    position: absolute;
+    top: 10%;
+    z-index: 1000;
+
+}
+
+.Bg_baner img{
+
+    width: 100%;
+    position: absolute;
+    z-index: -1000;
+    top: 0;    
+
+}
+
+.baner{
+    
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    
+
+}
+
+.baner h1{
+
+    font-family: "IM Fell French Canon", serif;
+    font-size: xx-large;
+    font-weight: 400;
+
+
+}
+
+.div_button{
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 7%;
+    gap: 2%;
+
+}
+
+.button{
+
+    width: 10%;
+    height: 100%;
+
+}
+
+.card_QuemSomos {
+
+    background-image:  url(../assets/imgs/backgrounds/costumezeble.svg) ;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60%;
+    margin-top: 15%;
+
+}
+
+.text_card{
+
+    text-align: center;
+    width: 30%;
+
+}
+
+.text_title {
+
+    font-family: "IM Fell French Canon", serif;
+    font-size: 300%;
+    font-weight: 400;
+    margin-bottom: 3%;
+
+}
+
+.text_body{
+
+    font-family: "Montserrat", sans-serif;
+
+}
+
+.card_video{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    height: 80%;
+
+}
+
+video {
+    
+    width: 100%;
+    height: 100%;
+
+}
+
