@@ -71,12 +71,13 @@ body{
 
 .card_QuemSomos {
 
-    background-image:  url(../assets/imgs/backgrounds/costumezeble.svg) ;
+    background-image: url(../assets/imgs/backgrounds/costumezeble.svg);
+    background-repeat: no-repeat;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 60%;
+    height: 92%;
     margin-top: 15%;
 
 }
@@ -119,4 +120,46 @@ video {
     height: 100%;
 
 }
+
+.card_beneficios{
+    
+
+    background-image: url(../assets/imgs/backgrounds/costumezeble_Bg.svg);
+    background-size: contain;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 50%;
+
+}
+
+.card_dice{
+    
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 20%;
+
+}
+
+.d4, .d8, .d10, .d20{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20%;
+    position: absolute;
+    top: 198%;
+    z-index: -1000;
+
+}
+
+.title_dice{
+
+    font-family: "IM Fell French Canon", serif;
+    font-size: 300%;
+    font-weight: 400;
+
+}
+
 
