@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/navbar.css">
     <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
     <link rel="icon" href="./assets/icon/favicon.png">
 
 </head>
@@ -24,7 +25,7 @@
 
       <ul class="nav">
         <li ><a class="Page_Atual" href="#">Home</a></li>
-        <li><a href="">Guia do Mestre</a></li>
+        <li><a href="">Tomo do Mestre</a></li>
         <li><a href="">Registrar-se</a></li>
       </ul>
 
@@ -63,8 +64,18 @@
   </header>
 
   <div class="card_login" id="card_login" style="display: none;">
+    <div class="div_ipt">
+      <label for="ipt_email">E-mail:</label>
+      <input class="ipt" id="ipt_email" type="text">
 
+      <label for="ipt_senha">Senha:</label>
+      <input class="ipt" id="ipt_senha" type="password">
+    </div>
+    
+    <button class="button btn" onclick="Entrar()">Entrar</button>
 
+    <div id="div_erros_login"></div>
+    
   </div>
 
   <div class="Bg_baner">
@@ -75,7 +86,7 @@
     <h1>Criando Mundos, Desenvolvendo Historias</h2>
 
     <div class="div_button">
-    <button class="button">Guia do Mestre</button>
+    <button class="button">Tomo do Mestre</button>
     <button class="button">Minhas Campanhas</button>
 
     </div>
@@ -125,6 +136,8 @@
     </div>
 
   </div>
+
+
 
 </body>
 </html>

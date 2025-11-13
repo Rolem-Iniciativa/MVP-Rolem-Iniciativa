@@ -7,19 +7,6 @@ body{
 
 }
 
-.card_login{
-
-    background-color: var(--bg-navbar);
-    align-self: end;
-    justify-self: end;
-    width: 25%;
-    height: 35%;
-    position: absolute;
-    top: 10%;
-    z-index: 1000;
-
-}
-
 .Bg_baner img{
 
     width: 100%;
