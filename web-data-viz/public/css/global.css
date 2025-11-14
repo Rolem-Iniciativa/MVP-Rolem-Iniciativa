@@ -37,6 +37,13 @@ html, body{
 
 }
 
+body {
+
+  background-color: var(--bg-page);
+  color: var(--text-color-padrao);
+
+}
+
 a {
 
     text-decoration: none;
@@ -54,6 +61,7 @@ li {
 
     --bg-navbar: rgba(0, 25, 46, 50%);
     --bg-page: rgb(0, 15, 29);
+    --bg-card: rgba(77, 89, 110, .7);
     
     --text-color-padrao: rgb(255, 255, 255);
     --text-color-destaque: rgb(47, 153, 166);

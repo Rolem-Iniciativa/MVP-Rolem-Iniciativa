@@ -1,0 +1,61 @@
+.bg_costumezable {
+
+    fill: linear-gradient(180deg, #57009E 0%, rgba(115, 115, 115, 0.00) 100%);
+    bottom: 0;
+    position: absolute;
+    z-index: -100;
+    width: 100%;
+    height: 68%;
+    
+}
+
+#img_Logo{
+
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: -100;
+    height: 85%;
+
+}
+
+#img_Corvos{
+
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: 1;
+    height: 90%;
+    
+
+}
+
+.container_cadastro{
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 90%;
+
+}
+
+.card_cadastro {
+
+    background-color: var(--bg-card);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+    height: 70%;
+    margin: 17%;
+    border-radius: 10px;
+
+}
+
+.ipt {
+
+    margin: 0;
+
+}
+
