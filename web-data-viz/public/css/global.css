@@ -65,11 +65,21 @@ li {
     
     --text-color-padrao: rgb(255, 255, 255);
     --text-color-destaque: rgb(47, 153, 166);
+    --text-color-erro: rgb(223, 13, 13);
 
     --bg-gradiend-claro: rgba(163, 239, 250, 1);
     --bg-gradiend-medio: rgba(105, 195, 208, 1);
     --bg-gradiend-escuro: rgba(0, 111, 123, 1);
 
+
+}
+
+.text_title {
+
+    font-family: "IM Fell French Canon", serif;
+    font-size: 300%;
+    font-weight: 400;
+    margin-bottom: 3%;
 
 }
 
@@ -100,4 +110,12 @@ li {
 .button:hover {
   transform: scale(1.03);
   box-shadow: 0 4px 10px var(--bg-gradiend-claro) ;
+}
+
+.div_erros {
+
+  color: var(--text-color-erro);
+  text-align: center;
+  width: 70%;
+
 }

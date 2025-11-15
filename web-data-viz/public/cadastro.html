@@ -21,13 +21,13 @@
   <header class="navbar">
     <div class="container_nav">
       <div class="logo">
-        <a href="#"><img src="assets/imgs/Logo.png" alt=""></a>
+        <a href="index.html"><img src="assets/imgs/Logo.png" alt=""></a>
       </div>
 
       <ul class="nav">
-        <li ><a class="Page_Atual" href="#">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="">Tomo do Mestre</a></li>
-        <li><a href="">Registrar-se</a></li>
+        <li><a class="Page_Atual" href="#">Registrar-se</a></li>
       </ul>
 
       <div class="user_icon" id="user_icon" onclick="CardLogin(false)">
@@ -75,7 +75,7 @@
     
     <button class="button btn" onclick="Entrar()">Entrar</button>
     
-    <div id="div_erros_login"></div>
+    <div id="erro_login" class="div_erros"></div>
     
   </div>
 
@@ -99,7 +99,7 @@
 
     <div class="card_cadastro">
 
-      <h2>Cadastre-se</h2>
+      <h2 class="text_title">Cadastre-se</h2>
 
       <label for="ipt_nome">Nome:</label>
       <input id="ipt_nome" class="ipt" type="text" name="">
@@ -109,14 +109,19 @@
 
       <label for="ipt_email">Email:</label>
       <input id="ipt_email" class="ipt" type="text" name="">
+      <div id="erro_email" class="div_erros"></div>
 
       <label for="ipt_senha">Senha:</label>
       <input id="ipt_senha" class="ipt" type="text" name="">
+      <div id="erro_senha" class="div_erros"></div>
 
       <label for="ipt_confirmSenha">Confirmar Senha:</label>
       <input id="ipt_confirmSenha" class="ipt" type="text" name="">
+      <div id="erro_confirm" class="div_erros"></div>
 
       <button class="button" onclick="cadastrar()">Cadastrar</button>
+      
+      <div id="erro_geral" class="div_erros"></div>
 
     </div>
     
@@ -131,3 +136,4 @@
 </html>
 
 <script src="js/login.js"></script>
+<script src="js/cadastro.js"></script>
