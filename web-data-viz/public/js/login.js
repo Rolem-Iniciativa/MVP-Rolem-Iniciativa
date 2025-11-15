@@ -18,8 +18,8 @@ function CardLogin(Abrir){
 
 function Entrar() {
 
-    var emailVar = ipt_email.value;
-    var senhaVar = ipt_senha.value;
+    var emailVar = ipt_email_login.value;
+    var senhaVar = ipt_senha_login.value;
 
     console.log("FORM LOGIN: ", emailVar);
     console.log("FORM SENHA: ", senhaVar);
