@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tomo do Mestre</title>
+
+    <link rel="stylesheet" href="../css/global.css">
+    <link rel="stylesheet" href="../css/navbar.css">
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="stylesheet" href="../css/tomo_mestre.css">
+    <link rel="icon" href="../assets/icon/favicon.png">
+
+</head>
+<body>
+
+  <!-- Inicio Navbar -->
+
+  <header class="navbar">
+    <div class="container_nav">
+      <div class="logo">
+        <a href="#"><img src="../assets/imgs/Logo.png" alt=""></a>
+      </div>
+
+      <ul class="nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a class="Page_Atual" href="tomo_mestre.html">Tomo do Mestre</a></li>
+        <li><a href="cadastro.html">Registrar-se</a></li>
+      </ul>
+
+      <div class="user_icon" id="user_icon" onclick="CardLogin(false)">
+        <svg id="user" class="Icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 90.000000 90.000000"
+        preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,90.000000) scale(0.100000,-0.100000)"
+          fill="#000000" stroke="none">
+          <path d="M355 796 c-107 -34 -186 -102 -232 -201 -24 -51 -28 -73 -28 -145 0
+          -72 4 -94 28 -145 16 -33 40 -72 54 -87 l26 -27 41 35 c44 38 145 74 206 74
+          61 0 162 -36 206 -74 l41 -35 26 27 c14 15 38 54 54 87 24 51 28 73 28 145 0
+          72 -4 94 -28 145 -30 65 -81 124 -138 160 -78 50 -199 68 -284 41z m179 -205
+          c28 -29 31 -37 31 -96 0 -60 -3 -67 -33 -97 -28 -28 -39 -33 -82 -33 -43 0
+          -54 5 -82 33 -30 30 -33 37 -33 96 0 55 4 68 25 91 33 36 57 46 104 41 27 -3
+          49 -14 70 -35z"/>
+          <path d="M410 550 c-41 -41 -14 -130 40 -130 32 0 60 36 60 75 0 39 -28 75
+          -60 75 -11 0 -29 -9 -40 -20z"/>
+          <path d="M374 226 c-61 -20 -104 -48 -104 -69 0 -12 16 -25 48 -40 67 -31 197
+          -31 265 0 65 30 64 53 -7 88 -64 31 -145 40 -202 21z"/>
+          </g>
+        </svg>
+
+        <svg id="plusIcon" class="Icon" version="1.0" xmlns="http://www.w3.org/2000/svg"
+          width="16.000000pt" height="14.000000pt" viewBox="0 0 16.000000 14.000000"
+          preserveAspectRatio="xMidYMid meet">
+
+          <g transform="translate(0.000000,14.000000) scale(0.100000,-0.100000)" fill="#000000" stroke="none">
+          <path d="M26 93 c47 -81 50 -85 61 -71 14 19 63 106 63 112 0 3 -34 6 -75 6l-76 0 27 -47z"/>
+          </g>
+        </svg>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Inicio card login -->
+  
+  <div class="card_login" id="card_login" style="display: none;">
+    <div class="div_ipt">
+      <label for="ipt_email_login">E-mail:</label>
+      <input class="ipt" id="ipt_email_login" type="text">
+      
+      <label for="ipt_senha_login">Senha:</label>
+      <input class="ipt" id="ipt_senha_login" type="password">
+    </div>
+    
+    <button class="button btn" onclick="Entrar()">Entrar</button>
+    
+    <div id="erro_login" class="div_erros_login"></div>
+    
+  </div>
+
+  <!-- Fim card login -->
+
+  <!-- Fim Navbar -->
+
+
+  <!-- Inicio Tomo do Mestre -->
+
+  <div class="container_tomo">
+
+    <!-- Inicio da sidebar -->
+    <aside class="sidebar">
+      <div class="title_side">
+        <img class="d20" src="../assets/icon/Icon20Nat.png" alt="">
+        <h2 class="text_title">Grimorio do Mestre</h2>
+      </div>
+
+      <div class="conteudo_side">
+        
+
+      </div>
+
+    </aside>
+    <!-- Fim da sidebar -->
+
+
+  </div>
+
+
+
+  </div>
+
+
+    
+</body>
+</html>
+
+<script src="../js/login.js"></script>
+<script src="../js/tomo_mestre.js"></script>
