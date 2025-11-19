@@ -85,7 +85,7 @@ function cadastrar() {
         if (resposta.ok) {
 
           setTimeout(() => {
-            window.location = "index.html";
+            window.location = "../index.html";
           }, "2000");
 
         } else {

@@ -2,14 +2,14 @@ function CardLogin(Abrir){
 
     if (Abrir == false){
         return Abrir =
-        card_login.style = 'display: flex;', 
+        card_nav.style = 'display: flex;', 
         user_icon.onclick = () => CardLogin(true),
         console.log("abriu");
     } 
     
     if(Abrir == true){
         return Abrir = 
-        card_login.style = 'display: none;',
+        card_nav.style = 'display: none;',
         user_icon.onclick = () => CardLogin(false),
         console.log('fechou');
     }
@@ -48,7 +48,7 @@ function Entrar() {
         sessionStorage.EMAIL_USUARIO = json.email;
 
         setTimeout(function () {
-    window.location = "./dashboard/cards.html";
+    window.location = "../index.html";
         }, 1000); // apenas para exibir o loading
 
     });

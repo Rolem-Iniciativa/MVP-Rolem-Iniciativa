@@ -14,7 +14,7 @@
     <link rel="icon" href="../assets/icon/favicon.png">
 
 </head>
-<body>
+<body onload="validarSessao(1)">
 
   <!-- Inicio Navbar -->
 
@@ -24,7 +24,7 @@
         <a href="#"><img src="../assets/imgs/Logo.png" alt=""></a>
       </div>
 
-      <ul class="nav">
+      <ul id="nav" class="nav">
         <li><a href="../index.html">Home</a></li>
         <li><a class="Page_Atual" href="tomo_mestre.html">Tomo do Mestre</a></li>
         <li><a href="cadastro.html">Registrar-se</a></li>
@@ -66,18 +66,8 @@
 
   <!-- Inicio card login -->
   
-  <div class="card_login" id="card_login" style="display: none;">
-    <div class="div_ipt">
-      <label for="ipt_email_login">E-mail:</label>
-      <input class="ipt" id="ipt_email_login" type="text">
-      
-      <label for="ipt_senha_login">Senha:</label>
-      <input class="ipt" id="ipt_senha_login" type="password">
-    </div>
+  <div class="card_nav" id="card_nav" style="display: none;">
     
-    <button class="button btn" onclick="Entrar()">Entrar</button>
-    
-    <div id="erro_login" class="div_erros_login"></div>
     
   </div>
 
@@ -97,7 +87,7 @@
         <h2 class="text_title">Grimorio do Mestre</h2>
       </div>
 
-      <div class="conteudo_side">
+      <div id="conteudo_side" class="conteudo_side">
         
 
       </div>
@@ -117,5 +107,6 @@
 </body>
 </html>
 
+<script src="../js/sessao.js"></script>
 <script src="../js/login.js"></script>
 <script src="../js/tomo_mestre.js"></script>

@@ -16,7 +16,6 @@
 </head>
 <body>
 
-
   <!-- Inicio Navbar -->
 
   <header class="navbar">
@@ -25,7 +24,7 @@
         <a href="index.html"><img src="../assets/imgs/Logo.png" alt=""></a>
       </div>
 
-      <ul class="nav">
+      <ul id="nav" class="nav">
         <li><a href="../index.html">Home</a></li>
         <li><a href="tomo_mestre.html">Tomo do Mestre</a></li>
         <li><a class="Page_Atual" href="#">Registrar-se</a></li>
@@ -65,7 +64,7 @@
     </div>
   </header>
   
-  <div class="card_login" id="card_login" style="display: none;">
+  <div class="card_nav" id="card_nav" style="display: none;">
     <div class="div_ipt">
       <label for="ipt_email_login">E-mail:</label>
       <input class="ipt" id="ipt_email_login" type="text">
@@ -136,5 +135,6 @@
 </body>
 </html>
 
+<script src="js/sessao.js"></script>
 <script src="../js/login.js"></script>
 <script src="../js/cadastro.js"></script>

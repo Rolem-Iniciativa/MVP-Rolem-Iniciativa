@@ -71,6 +71,7 @@ li {
     --bg-gradiend-claro: rgba(163, 239, 250, 1);
     --bg-gradiend-medio: rgba(105, 195, 208, 1);
     --bg-gradiend-escuro: rgba(0, 111, 123, 1);
+    --bg-gradiend-vermelho: linear-gradient(90deg, #FF1149, #8E0A29);
 
 
 }
