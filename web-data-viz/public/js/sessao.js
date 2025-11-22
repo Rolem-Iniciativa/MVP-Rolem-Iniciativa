@@ -1,4 +1,4 @@
-// sessão
+
 function validarSessao(page) {
     var email = sessionStorage.EMAIL_USUARIO;
     var nome = sessionStorage.NOME_USUARIO;
@@ -20,11 +20,13 @@ function validarSessao(page) {
 
             <div class="div_btn">
 
-            <button class="button" onclick="window.location ='ficha_mestre.html'">Ficha do Mestre</button>
+            <button class="button" onclick="window.location ='view/ficha_mestre.html'">Ficha do Mestre</button>
             <button id="btn_sair" class="button" onclick="limparSessao(0)">Sair</button>
         
             </div>    
             `
+
+            minha_campanha.onclick = () => window.location = 'view/minhas_mesas.html';
 
         } else {
 
@@ -95,7 +97,25 @@ function validarSessao(page) {
                 <div id="erro_login" class="div_erros_login"></div>
             `
         }
+
     }
+
+    if (page == 2 || page == 3) {
+        
+        card_nav.innerHTML = `
+        <h2 class="text_title">${nickName}</h2>
+        <h4>${email}</h4>
+    
+        <div class="div_btn">
+    
+        <button class="button" onclick="window.location ='ficha_mestre.html'">Ficha do Mestre</button>
+        <button id="btn_sair" class="button" onclick="limparSessao()">Sair</button>
+    
+        </div>    
+        `
+    
+    }
+    
 }
 
 function limparSessao(page) {

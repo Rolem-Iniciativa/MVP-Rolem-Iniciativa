@@ -14,6 +14,7 @@ function CardLogin(Abrir){
         console.log('fechou');
     }
     
+    validarSessao()
 }
 
 function Entrar() {

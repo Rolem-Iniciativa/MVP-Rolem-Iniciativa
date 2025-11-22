@@ -2,19 +2,19 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Tomo do Mestre</title>
+    <title>Ficha do Mestre</title>
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/navbar.css">
     <link rel="stylesheet" href="../css/login.css">
-    <link rel="stylesheet" href="../css/tomo_mestre.css">
-    <link rel="icon" href="../assets/icon/favicon.png">
+    <link rel="stylesheet" href="../css/ficha_mestre.css">
+    <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/x-icon">
 
 </head>
-<body onload="validarSessao(1)">
+<body onload="validarSessao(2)">
 
   <!-- Inicio Navbar -->
 
@@ -25,7 +25,9 @@
       </div>
 
       <ul id="nav" class="nav">
-        
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="tomo_mestre.html">Tomo do Mestre</a></li>
+        <li><a href="minhas_mesas.html">Minhas Mesas</a></li>
       </ul>
 
       <div class="user_icon" id="user_icon" onclick="CardLogin(false)">
@@ -65,46 +67,86 @@
   <!-- Inicio card login -->
   
   <div class="card_nav" id="card_nav" style="display: none;">
-    
-    
+   
   </div>
 
   <!-- Fim card login -->
 
   <!-- Fim Navbar -->
 
+  <!-- Inicio Ficha do Mestre -->
 
-  <!-- Inicio Tomo do Mestre -->
+  <div class="container_ficha">
 
-  <div class="container_tomo">
+    <div class="bg_img">
+      
+      <img id="SupEsquerdo" src="../assets/imgs/backgrounds/BgPerfil.svg" alt="">
+      <img id="SupDireito" src="../assets/imgs/backgrounds/BgPerfil.svg" alt="">
 
-    <!-- Inicio da sidebar -->
-    <aside class="sidebar">
-      <div class="title_side">
-        <img class="d20" src="../assets/icon/Icon20Nat.png" alt="">
-        <h2 class="text_title">Grimorio do Mestre</h2>
+    </div>
+
+    <div class="bg_img_inf">
+      
+      <img id="InfEsquerdo" src="../assets/imgs/backgrounds/BgPerfil.svg" alt="">
+      <img id="InfDireito" src="../assets/imgs/backgrounds/BgPerfil.svg" alt="">
+
+    </div>
+
+    <div class="card_esquerda">
+
+      <div class="kpi">
+
+        <span class="text_title">Top Escolhas</span>
+        <p>As escolhas mais frequentes dos usuario</p>
+        <span class="text_kpi" >Tema:</span>
+        <span class="text_kpi" >Estrutura:</span>
+        <span class="text_kpi" >Arco Narrativo:</span>
+
       </div>
 
-      <div id="conteudo_side" class="conteudo_side">
-        
+      <div class="ranking">
+        <img src="../assets/imgs/backgrounds/CardMold.svg" alt="">
+      </div>
+
+    </div>
+
+    <div class="card_meio">
+      <div class="card_perfil">
+        <img id="img_user" src="../assets/icon/UserIcon.svg" alt="">
+        <div class="xp">
+          <span id="level_usuario" class="level_usuario">1</span>
+          <progress id="barra_xp" value="30" max="100"></progress>
+        </div>
+        <h2 id="nome_usuario" class="text_title">Gleison Almeida</h2>
+        <img id="mold" src="../assets/imgs/backgrounds/costumezebleMoldName.svg" alt="">
 
       </div>
 
-    </aside>
-    <!-- Fim da sidebar -->
+      <canvas id="rede"></canvas>
+    </div>
 
+    <div class="card_direita">
+
+      <div class="kpi">
+
+        <span class="text_title">Suas Escolhas</span>
+        <p>Suas escolhas mas frequentes</p>
+        <span class="text_kpi" >Tema:</span>
+        <span class="text_kpi" >Estrutura:</span>
+        <span class="text_kpi" >Arco Narrativo:</span>
+
+      </div>
+
+      <div class="kpis">
+        <img src="../assets/imgs/backgrounds/CardMold.svg" alt="">
+      </div>
+
+      </div>
 
   </div>
-
-
-
-  </div>
-
-
     
 </body>
 </html>
 
 <script src="../js/sessao.js"></script>
 <script src="../js/login.js"></script>
-<script src="../js/tomo_mestre.js"></script>

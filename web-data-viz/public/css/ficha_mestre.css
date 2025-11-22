@@ -1,0 +1,185 @@
+.container_ficha{
+
+    display: flex;
+    width: 100%;
+    height: 90%;
+    max-height: 100%;
+    justify-content: center;
+
+}
+
+.bg_img{
+    
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: start;
+    justify-content: space-between;
+    z-index: -100;
+
+}
+
+.bg_img_inf{
+    
+    position: absolute;
+    display: flex;
+    width: 100%;
+    height: 50%;
+    align-items: end;
+    justify-content: space-between;
+    z-index: -100;
+    bottom: 0;
+    
+
+}
+
+#SupEsquerdo{
+    
+    height: 60%;
+    transform: scaleX(1);
+    
+
+}
+
+#SupDireito{
+    
+    height: 60%;    
+    transform: scaleX(-1);
+
+
+}
+
+#InfEsquerdo{
+    
+    height: 60%;
+    transform: scaleY(-1);
+
+}
+
+#InfDireito{
+        
+    height: 60%;
+    transform: scaleX(-1) scaleY(-1);
+
+}
+
+.card_meio {
+
+    width: 28%;
+    height: 100%;
+    max-height: 100%;
+
+}
+
+.card_perfil{
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    width: 100%;
+    height: 49%;
+
+}
+
+#img_user {
+
+    margin-top: 2%;
+    height: 40%;
+
+}
+
+.xp {
+
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 70%;
+    height: 10%;
+
+}
+
+.xp span{
+
+    font-family: "IM Fell French Canon", serif;
+    font-size: 250%;
+    height: 125%; 
+    margin-right: 3%;
+
+}
+
+#mold {
+
+    width: 70%;
+
+}
+
+#nome_usuario {
+
+    font-size: 250%;
+
+}
+
+.text_title {
+
+    margin: 2% 0 0 0;
+
+}
+
+.card_esquerda, .card_direita{
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    margin-bottom: 6%;
+    width: 29%;
+    gap: 3%;
+
+}
+
+.kpi {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    height: 35%;
+
+}
+
+.kpi p{
+
+    margin-bottom: 2%;
+
+}
+
+.text_title{
+
+    font-size: 200%;
+    margin-bottom: 2%;
+
+}
+
+.text_kpi {
+
+    justify-content: start;
+    font-size: large;
+    width: 60%;
+
+}
+
+.card_esquerda img, .card_direita img{
+
+    display: flex;
+    align-items: start;
+    width: 100%;
+
+}
+
+#rede {
+
+    width: 100%;
+    height: 50%;
+    
+}
