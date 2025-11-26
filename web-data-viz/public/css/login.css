@@ -72,3 +72,9 @@
 
 
 }
+
+.div_erros_login{
+
+    color: var(--text-color-erro);
+
+}

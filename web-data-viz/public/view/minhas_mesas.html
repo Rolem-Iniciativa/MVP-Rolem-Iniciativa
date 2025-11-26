@@ -14,7 +14,7 @@
 
 
 </head>
-<body onload="validarSessao(3)">
+<body onload="validarSessao(3), exibirCampanhas()">
 
     <!-- Inicio Navbar -->
 
@@ -79,32 +79,13 @@
     <div class="container_card">
 
         <div class="btn">
-            <button class="button" onclick="NovaCampanha()">+ Nova Campanha</button>
+
+            <button class="button" onclick="window.location = 'campanha.html'">+ Nova Campanha</button>
 
         </div>
 
         <div class="container_campanha">
-            <div class="card_campanha">
-                
-                <div class="container_flex">
-                    <h2 class="text_title">A Queda de Vanir</h2>
-                    <p class="text">
-                        <span id="spn_sistema">Sistema:</span>
-                        <span class="spn_descricao"></span> Descrição:
-                        <div class="camp_descricao"></div>
-                    </p>
-                </div>
-
-                <div class="detalhes">
-                    <h2 class="text_title">Detalhes</h2>
-                    <span id="spn_tema" class="text">Tema:</span>
-                    <span id="spn_Estrutura" class="text">Estrutura:</span>
-                    <span id="spn_Arco" class="text">Arco Narrativo:</span>
-                    <span id="spn_Sessões" class="text">Sessões Jogadas:</span>
-
-                </div>
-
-            </div>
+            
 
         </div>
 
@@ -117,5 +98,6 @@
 </body>
 </html>
 
-<script src="../js/login.js"></script>
 <script src="../js/sessao.js"></script>
+<script src="../js/login.js"></script>
+<script src="../js/minha_mesa.js"></script>

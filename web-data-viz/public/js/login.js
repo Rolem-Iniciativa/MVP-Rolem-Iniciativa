@@ -28,42 +28,47 @@ function Entrar() {
     fetch("/usuarios/autenticar", {
         method: "POST",
         headers: {
-    "Content-Type": "application/json"
+        "Content-Type": "application/json"
         },
         body: JSON.stringify({
-    emailServer: emailVar,
-    senhaServer: senhaVar
+        emailServer: emailVar,
+        senhaServer: senhaVar
         })
-    }).then(function (resposta) {
+    })
+    .then(function (resposta) {
         console.log("ESTOU NO THEN DO entrar()!")
 
         if (resposta.ok) {
-    console.log(resposta);
+            console.log(resposta);
 
-    resposta.json().then(json => {
-        console.log(json);
-        console.log(JSON.stringify(json));
-        sessionStorage.ID_USUARIO = json.idUsuario;
-        sessionStorage.NOME_USUARIO = json.nome;
-        sessionStorage.NICKNAME_USUARIO = json.nickName;
-        sessionStorage.EMAIL_USUARIO = json.email;
+            resposta.json().then(json => {
+            console.log(json);
+            console.log(JSON.stringify(json));
+            sessionStorage.ID_USUARIO = json.idUsuario;
+            sessionStorage.NOME_USUARIO = json.nome;
+            sessionStorage.NICKNAME_USUARIO = json.nickName;
+            sessionStorage.EMAIL_USUARIO = json.email;
 
-        setTimeout(function () {
-    window.location = "../index.html";
-        }, 1000); // apenas para exibir o loading
+            setTimeout(function () {
+            window.location = "../index.html";
+            }, 1000); // apenas para exibir o loading
 
-    });
+            });
 
-        } else {
+        }else{
 
-    console.log("Houve um erro ao tentar realizar o login!");
+            console.log("Houve um erro ao tentar realizar o login!");
 
-    resposta.text().then(texto => {
-        console.error(texto);
-    });
+            erro_login.innerHTML = 'Email ou Senha incorretos'
+
+            resposta.text().then(texto => {
+                console.error(texto);
+            });
+
         }
 
-    }).catch(function (erro) {
+    })
+    .catch(function (erro) {
         console.log(erro);
     })
 

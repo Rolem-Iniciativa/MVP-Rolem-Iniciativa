@@ -26,7 +26,7 @@
 .cormorant-garamond {
   font-family: "Cormorant Garamond", serif;
   font-optical-sizing: auto;
-  font-weight: 400;
+  font-weight: 600;
   font-style: normal;
 }
 
@@ -74,6 +74,7 @@ li {
     --bg-card: rgba(77, 89, 110, .7);
     --bg-sidebar: linear-gradient(180deg, #001425 24.21%, #176A6C);
     --bg-cardCampanha: linear-gradient(-90deg, #000f1d 10%, #176A6C);
+    --bg-cardHistoria: rgba(213, 250, 255, 0.80);
     
     --text-color-padrao: rgb(255, 255, 255);
     --text-color-destaque: rgb(47, 153, 166);
@@ -89,7 +90,7 @@ li {
 
 .text_title {
 
-    font-family: "IM Fell French Canon", serif;
+    font-family: "Cormorant Garamond", serif;
     font-size: 300%;
     font-weight: 400;
     margin-bottom: 3%;

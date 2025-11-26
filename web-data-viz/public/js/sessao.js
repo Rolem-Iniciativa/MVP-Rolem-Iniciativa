@@ -6,7 +6,7 @@ function validarSessao(page) {
 
     if (page == 0){
 
-        if (true/*email != null && nome != null*/) {
+        if (email != null && nome != null) {
 
             nav.innerHTML = `
             <li ><a class="Page_Atual" href="#">Home</a></li>
@@ -100,7 +100,7 @@ function validarSessao(page) {
 
     }
 
-    if (page == 2 || page == 3) {
+    if (page == 2 || page == 3 || page == 4) {
         
         card_nav.innerHTML = `
         <h2 class="text_title">${nickName}</h2>
