@@ -60,7 +60,7 @@ function validarSessao(page) {
             nav.innerHTML = `
             <li><a href="../index.html">Home</a></li>
             <li><a class="Page_Atual" href="tomo_mestre.html">Tomo do Mestre</a></li>
-            <li><a href="view/minhas_mesas.html">Minhas Mesas</a></li>
+            <li><a href="minhas_mesas.html">Minhas Mesas</a></li>
             `
 
             card_nav.innerHTML = `

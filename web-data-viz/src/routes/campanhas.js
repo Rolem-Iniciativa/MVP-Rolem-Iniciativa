@@ -3,15 +3,27 @@ var router = express.Router();
 
 var campanhaController = require('../controllers/campanhaController');
 
-router.post('/cadastrar', function (req, res){
+router.post('/cadastrar', function (req, res) {
 
     campanhaController.cadastrar(req, res);
 
 });
 
-router.get('/exibir', function (req, res) {
+router.post('/DadosCampanha', function (req, res) {
 
-    campanhaController.exibir(req, res);
+    campanhaController.DadosCampanha(req, res);
+
+});
+
+router.post('/listar', function (req, res) {
+
+    campanhaController.listar(req, res);
+
+});
+
+router.put('/atualizar', function (req, res) {
+
+    campanhaController.atualizar(req, res);
 
 });
 

@@ -3,6 +3,14 @@ input[type="number"]::-webkit-inner-spin-button {
   -webkit-appearance: none;
 }
 
+option {
+
+    background: rgba(0, 15, 29, 0.50);
+    color: var(--text-padrão);
+    border: none;
+
+}
+
 .container_campanha {
     
     display: flex;

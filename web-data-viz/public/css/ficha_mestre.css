@@ -66,7 +66,7 @@
 
 .card_meio {
 
-    width: 28%;
+    width: 20%;
     height: 100%;
     max-height: 100%;
 
@@ -133,8 +133,8 @@
     flex-direction: column;
     justify-content: end;
     margin-bottom: 6%;
-    width: 29%;
-    gap: 3%;
+    width: 33%;
+
 
 }
 
@@ -169,17 +169,18 @@
 
 }
 
-.card_esquerda img, .card_direita img{
+.barras {
 
-    display: flex;
-    align-items: start;
+    position: sticky;
+    z-index: 100;
+    height: 50%;
     width: 100%;
 
 }
 
-#rede {
+.barras canvas{
 
-    width: 100%;
-    height: 50%;
-    
+    min-height: 100%;
+    min-width: 100%;
+
 }

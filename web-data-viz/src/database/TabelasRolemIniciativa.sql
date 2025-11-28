@@ -71,3 +71,5 @@ CREATE TABLE campanha (
     CONSTRAINT fkCampanhaTema
 		FOREIGN KEY (fkTema) REFERENCES Tema(idTema)
 );
+
+select * from usuario;
