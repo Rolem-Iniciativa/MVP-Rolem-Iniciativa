@@ -14,7 +14,7 @@
     <link rel="shortcut icon" href="../assets/icon/favicon.png" type="image/x-icon">
 
 </head>
-<body onload="validarSessao(2)">
+<body onload="validarSessao(2), DadosGrafico(), DadosKPI()">
 
   <!-- Inicio Navbar -->
 
@@ -98,9 +98,9 @@
 
         <span class="text_title">Top Escolhas</span>
         <p>As escolhas mais frequentes dos usuario</p>
-        <span class="text_kpi" >Tema:</span>
-        <span class="text_kpi" >Estrutura:</span>
-        <span class="text_kpi" >Arco Narrativo:</span>
+        <span class="text_kpi" >Tema: <span id="kpi_TemaFavorito"></span></span>
+        <span class="text_kpi" >Estrutura: <span id="kpi_EstruturaFavorito"></span></span>
+        <span class="text_kpi" >Arco Narrativo: <span id="kpi_ArcoFavorito"></span></span>
 
       </div>
 
@@ -113,10 +113,6 @@
     <div class="card_meio">
       <div class="card_perfil">
         <img id="img_user" src="../assets/icon/UserIcon.svg" alt="">
-        <div class="xp">
-          <span id="level_usuario" class="level_usuario">1</span>
-          <progress id="barra_xp" value="30" max="100"></progress>
-        </div>
         <h2 id="nome_usuario" class="text_title">Gleison Almeida</h2>
         <img id="mold" src="../assets/imgs/backgrounds/costumezebleMoldName.svg" alt="">
 
@@ -129,9 +125,9 @@
 
         <span class="text_title">Suas Escolhas</span>
         <p>Suas escolhas mas frequentes</p>
-        <span class="text_kpi" >Tema:</span>
-        <span class="text_kpi" >Estrutura:</span>
-        <span class="text_kpi" >Arco Narrativo:</span>
+        <span class="text_kpi" >Tema: <span id="kpi_TemaUsuario"></span></span>
+        <span class="text_kpi" >Estrutura: <span id="kpi_EstruturaUsuario"></span></span>
+        <span class="text_kpi" >Arco Narrativo: <span id="kpi_ArcoUsuario"></span></span>
 
       </div>
 
@@ -150,4 +146,5 @@
 <script src="../js/sessao.js"></script>
 <script src="../js/login.js"></script>
 <script src="../js/ficha_mestre.js"></script>
+
 

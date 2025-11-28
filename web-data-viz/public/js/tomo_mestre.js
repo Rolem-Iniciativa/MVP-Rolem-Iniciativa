@@ -1,15 +1,8 @@
 var listaConteudo = [{
     topico: 'Primeiros Passos',
     conteudo: [{
-        title: '',
-        conteudo: ''
-    }]
-}, {
-
-    topico: 'Herói da vila',
-    conteudo: [{
-        titulo: '',
-        conteudo: ''
+        title: 'Começe agora',
+        conteudo: '../assets/videos/PrimeirosPassos.mp4'
     }]
 }];
 
@@ -29,10 +22,13 @@ function ExibirConteudo(){
                     </div>
                     <h2 id='topico${i}' class="text_title title_conteudo" onclick="AbrirTopico(${i})">${listaConteudo[i].topico}</h2>
 
-                </div>
-
             </div>
-        `         
+
+            <div id="topicos" style='display: none;'> 
+                <span class='topico' onclick="ExibirTopico()">${listaConteudo[0].conteudo[0].title}</span>
+            </div>
+        </div>
+        `
     
     }
 
@@ -48,28 +44,9 @@ function AbrirTopico (id){
 
         livro_fechado0.style = 'opacity: 0;';
         livro_aberto0.style = 'opacity: 1;';
+        topicos.style = 'display: block; text-align: center;'
         topico0.onclick = () => FecharTopico(0)
         
-
-    }else if (id == 1){
-
-        livro_fechado1.style = 'opacity: 0;';
-        livro_aberto1.style = 'opacity: 1;';
-        topico1.onclick = () => FecharTopico(1)
-        
-
-    }else if (id == 2){
-
-        livro_fechado2.style = 'opacity: 0;';
-        livro_aberto2.style = 'opacity: 1;';
-        topico2.onclick = () => FecharTopico(2)
-        
-
-    }else if (id == 3){
-
-        livro_fechado3.style = 'opacity: 0;';
-        livro_aberto3.style = 'opacity: 1;';
-        topico3.onclick = () => FecharTopico(3)
 
     }
     
@@ -82,26 +59,20 @@ function AbrirTopico (id){
 
         livro_fechado0.style = 'opacity: 1;';
         livro_aberto0.style = 'opacity: 0;';
+        topicos.style = 'display: none'
         topico0.onclick = () => AbrirTopico(0)
-
-    }else if (id == 1){
-
-        livro_fechado1.style = 'opacity: 1;';
-        livro_aberto1.style = 'opacity: 0;';
-        topico1.onclick = () => AbrirTopico(1)
-
-    }else if (id == 2){
-
-        livro_fechado2.style = 'opacity: 1;';
-        livro_aberto2.style = 'opacity: 0;';
-        topico2.onclick = () => AbrirTopico(2)
-
-    }else if (id == 3){
-
-        livro_fechado3.style = 'opacity: 1;';
-        livro_aberto3.style = 'opacity: 0;';
-        topico3.onclick = () => AbrirTopico(3)
 
     }
     
+ }
+
+ function ExibirTopico(){
+
+    conteudo.innerHTML = `
+    <h2 class="text_title">Nivel 01: Começe Agora</h2>
+    <video controls>
+        <source src="${listaConteudo[0].conteudo[0].conteudo}" type="video/mp4">
+      </video>
+    `;
+
  }

@@ -49,14 +49,14 @@ function listar (idUsuario){
         campanha.Sessoes as Sessoes,
         estrutura.NomeEstrutura as Estrutura,
         enredo.NomeEnredo as Enredo,
-        ArcoNarrativo.NomeArco as ArcoNarrativo,
+        arcoNarrativo.NomeArco as ArcoNarrativo,
         tema.NomeTema as Tema
     FROM campanha
     JOIN estrutura 
         ON fkEstrutura = idEstrutura
     JOIN enredo
         ON fkEnredo = idEnredo
-    JOIN ArcoNarrativo
+    JOIN arcoNarrativo
         ON fkArcoNarrativo = idArcoNarrativo
     JOIN tema
         ON fkTema = idTema

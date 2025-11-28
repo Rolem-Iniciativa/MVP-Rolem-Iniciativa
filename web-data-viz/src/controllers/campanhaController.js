@@ -123,7 +123,7 @@ function listar (req, res) {
             function (erro){
                 console.log(erro)
                 console.log(
-                    "Houve um erro ao buscar os avisos: ",
+                    "Houve um erro ao buscar as campanhas: ",
                     erro.sqlMessage
                 );
                 res.status(500).json(erro.sqlMessage);

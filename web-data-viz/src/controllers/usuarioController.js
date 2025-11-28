@@ -21,11 +21,11 @@ function autenticar(req, res) {
 
                         res.json({
                             idUsuario: resultadoAutenticar[0].idUsuario,
-                            nome: resultadoAutenticar[0].nome,
-                            nickName: resultadoAutenticar[0].nickName,
-                            email: resultadoAutenticar[0].email,
-                            senha: resultadoAutenticar[0].senha,
-                            xp: resultadoAutenticar[0].xp,
+                            nome: resultadoAutenticar[0].Nome,
+                            nickName: resultadoAutenticar[0].NickName,
+                            email: resultadoAutenticar[0].Email,
+                            senha: resultadoAutenticar[0].Senha,
+                            xp: resultadoAutenticar[0].Xp,
                         });
 
                     } else if (resultadoAutenticar.length == 0) {

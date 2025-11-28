@@ -31,6 +31,8 @@ INSERT INTO Tema (NomeTema) VALUE
     
 show tables;
 
+truncate table campanha;
+
 SELECT 
 	    campanha.Nome as Titulo,
 	    campanha.Descricao as Descricao,
@@ -91,8 +93,127 @@ SELECT
     WHERE idUsuario = 1;
     
 select * from campanha;
+select * from estrutura;
+select * from tema;
 
+SELECT
+	(SELECT
+		count(campanha.fkEstrutura) 
+	FROM campanha
+	WHERE fkEstrutura = 1 and fkUsuario = 1) as EstruturaLinha,
 
+	(SELECT
+		count(campanha.fkEstrutura) 
+	FROM campanha
+	WHERE fkEstrutura = 2 and fkUsuario = 1) as EstruturaArvore,
+
+	(SELECT
+		count(campanha.fkEstrutura) 
+	FROM campanha
+	WHERE fkEstrutura = 3 and fkUsuario = 1) as EstruturaTeia,
     
-    desc tema;
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 1 and fkUsuario = 1) as EnredoSuperarMonstro,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 2 and fkUsuario = 1) as EnredoMiseriaRiqueza,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 3 and fkUsuario = 3) as EnredoBusca,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 4 and fkUsuario = 1) as EnredoViagemRetorno,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 5 and fkUsuario = 1) as EnredoComedia,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 6 and fkUsuario = 1) as EnredoTragedia,
+    
+    (SELECT
+		count(campanha.fkEnredo) 
+	FROM campanha
+	WHERE fkEnredo = 6 and fkUsuario = 1) as EnredoRenacimento
+fROM campanha LIMIT 1;
+
+SELECT 
+	tema.nomeTema, 
+    count(fkTema)
+FROM campanha
+join tema
+on fkTema = idTema
+where fkUsuario = 1
+group by nomeTema;
+
+	SELECT
+		(SELECT 
+			nomeTema as Tema
+		FROM  campanha
+		JOIN tema 
+		ON campanha.fkTema = tema.idTema
+		WHERE campanha.fkUsuario = 1
+		GROUP BY tema.nomeTema
+		ORDER BY COUNT(campanha.fkTema) DESC
+		LIMIT 1) as TemaUsuario,
+
+		(SELECT 
+			nomeEstrutura as Estrutura
+		FROM  campanha
+		JOIN estrutura 
+		ON campanha.fkEstrutura = estrutura.idEstrutura
+		WHERE campanha.fkUsuario = 1
+		GROUP BY estrutura.nomeEstrutura
+		ORDER BY COUNT(campanha.fkEstrutura) DESC 
+		LIMIT 1) EstruturaUsuario,
+
+		(SELECT 
+			nomeArco as Arco
+		FROM  campanha
+		JOIN arcoNarrativo
+		ON campanha.fkArcoNarrativo = arcoNarrativo.idArcoNarrativo
+		WHERE campanha.fkUsuario = 1
+		GROUP BY arcoNarrativo.nomeArco
+		ORDER BY COUNT(campanha.fkTema) DESC
+		LIMIT 1) ArcoUsuario,
+		
+		(SELECT 
+			nomeTema as Tema
+		FROM  campanha
+		JOIN tema 
+		ON campanha.fkTema = tema.idTema
+		GROUP BY tema.nomeTema
+		ORDER BY COUNT(campanha.fkTema) DESC
+		LIMIT 1) as TemaFavorito,
+
+		(SELECT 
+			nomeEstrutura as Estrutura
+		FROM  campanha
+		JOIN estrutura 
+		ON campanha.fkEstrutura = estrutura.idEstrutura
+		GROUP BY estrutura.nomeEstrutura
+		ORDER BY COUNT(campanha.fkEstrutura) DESC 
+		LIMIT 1) EstruturaFavorito,
+
+		(SELECT 
+			nomeArco as Arco
+		FROM  campanha
+		JOIN arcoNarrativo
+		ON campanha.fkArcoNarrativo = arcoNarrativo.idArcoNarrativo
+		GROUP BY arcoNarrativo.nomeArco
+		ORDER BY COUNT(campanha.fkTema) DESC
+		LIMIT 1) ArcoUsuarioFavorito;
+
+
     
