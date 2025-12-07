@@ -51,7 +51,7 @@ function Entrar() {
 
             setTimeout(function () {
             window.location = "../index.html";
-            }, 1000); // apenas para exibir o loading
+            }, 500); 
 
             });
 
